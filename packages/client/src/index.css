@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* 圖表容器不可選取 */
+.recharts-wrapper,
+.recharts-surface,
+.recharts-responsive-container {
+  user-select: none;
+  -webkit-user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 移除所有 SVG 元素的 focus 框 */
+.recharts-wrapper svg:focus,
+.recharts-wrapper *:focus {
+  outline: none;
+}

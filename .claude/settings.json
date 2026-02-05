@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm install)",
+      "Bash(pnpm -r build)",
+      "Bash(pnpm dev)",
+      "Bash(pnpm lint)",
+      "Bash(pnpm test *)",
+      "Bash(docker compose *)",
+      "Read(packages/**)",
+      "Write(packages/**)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)"
+    ]
+  }
+}
